@@ -1,3 +1,4 @@
+@login
 Feature: Verify YTO-By Flyer jumper
   Scenario: User does not see any jumper after closing a previous one
     When I click on 'Sing In'

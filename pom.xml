@@ -88,6 +88,17 @@
             <version>3.141.59</version>
             <scope>test</scope>
         </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/ru.yandex.qatools.allure/allure-maven-plugin -->
+        <dependency>
+            <groupId>ru.yandex.qatools.allure</groupId>
+            <artifactId>allure-maven-plugin</artifactId>
+            <version>2.6</version>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>
@@ -156,6 +167,7 @@
             </plugin>
         </plugins>
     </reporting>
+
 
 
 </project>

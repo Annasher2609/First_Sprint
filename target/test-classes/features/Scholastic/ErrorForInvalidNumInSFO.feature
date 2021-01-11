@@ -1,3 +1,4 @@
+@login
 Feature: Verify teacher gets error for invalid item number in SFO
   Scenario: User gets 'Please enter a valid item number' error msg
     When I click on 'Sing In'

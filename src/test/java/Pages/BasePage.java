@@ -91,7 +91,12 @@ public class BasePage {
     public boolean isStringContainsString(String elem1, String elem2) {
         return elem1.contains(elem2);
     }
-    public void scrolling(By locator){
+    public void scrollingDown(int pixels){
+        JavascriptExecutor js = (JavascriptExecutor)Web.getDriver();
+        js.executeScript("scrollBy(0," + pixels + ");");
+        sleep();
+    }
+    public void scrollingToElem(By locator){
         WebElement element = Web.getDriver().findElement(locator);
         JavascriptExecutor js = (JavascriptExecutor)Web.getDriver();
         js.executeScript("arguments[0].scrollIntoView9true0;",element);
@@ -99,6 +104,36 @@ public class BasePage {
     public boolean isStringEqualsString(String elem1, String elem2) {
         return elem1.equalsIgnoreCase(elem2);
     }
+    public boolean isDoubleEqualsDouble(Double elem1, Double elem2) {
+        if(elem1==elem2) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public boolean isIntEqualsInt(int elem1, int elem2) {
+        if(elem1==elem2) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public String getAttributeValue (By locator) {
+        WebElement wElem = Web.getDriver().findElement(locator);
+        sleep();
+        String value = wElem.getAttribute("value");
+        return value;
+    }
+    public double strIntoDouble (String data) {
+        return Double.valueOf(data);
+    }
+    public double getPriceNum(String data){
+        return Double.valueOf(data.substring(1));
+    }
+    public int strIntoInt (String data) {
+        return Integer.valueOf(data);
+    }
+
 
 
 

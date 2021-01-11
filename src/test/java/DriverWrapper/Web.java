@@ -18,7 +18,7 @@ public class Web {
         driver.get("https://clubs3qa1.scholastic.com/");
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
-
+    @After
     public void quitDriver() {
         driver.quit();
     }

@@ -1,3 +1,4 @@
+@login
 Feature: User can add only three credit cards
   Scenario: User is trying to add 4th credit card, gets error msg
     When I click on 'Sing In'

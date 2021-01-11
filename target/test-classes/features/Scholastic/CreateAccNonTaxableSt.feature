@@ -1,3 +1,4 @@
+@login
 Feature: User can create a new teacher account in non-taxable state using Zip Code
   Scenario: Verify a class code is present on Home-Page and MyAccount-Page, same teacher name is present on My Accounts, same school address is present as selected while creating the account
     When I click on 'Create an Account' button
